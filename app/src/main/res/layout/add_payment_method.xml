@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cab_text"
+        android:orientation="horizontal"
+        android:padding="@dimen/_12sdp">
+
+        <ImageView
+            android:background="@drawable/ripple_effect"
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <com.apps.cabpoint.cabigate.views.MobiTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/add_payment_method"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_15ssp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:orientation="vertical">
+        <com.apps.cabpoint.cabigate.views.MobiTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Methods"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14ssp"/>
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:background="@drawable/ripple_effect"
+                android:id="@+id/paypal_add_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PayPal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:drawableLeft="@drawable/ic_paypal_color"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_10sdp"/>
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:background="@drawable/ripple_effect"
+                android:id="@+id/credit_card_add_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit Card"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:drawableLeft="@drawable/ic_credit_color"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_10sdp"/>
+    </LinearLayout>
+</LinearLayout>

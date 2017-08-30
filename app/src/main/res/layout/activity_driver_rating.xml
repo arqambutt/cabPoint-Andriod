@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.55"
+        android:background="@color/cab_text"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/circle_rating"
+            android:padding="25dp"
+            android:src="@drawable/cup" />
+
+        <com.apps.cabpoint.cabigate.views.MobiTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Congratulations!"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <com.apps.cabpoint.cabigate.views.MobiTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="You have made it."
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45"
+        android:background="#66E6E6E6"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/driver_image_rating"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/congratulations_user"
+            android:padding="10dp"
+            android:src="@drawable/user_image" />
+
+        <com.apps.cabpoint.cabigate.views.MobiTextView
+            android:id="@+id/driver_name_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="BILL GATES"
+            android:textColor="#06BFC3"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/driver_rating_bar"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="3"
+            android:scaleX=".6"
+            android:scaleY=".7"
+            android:stepSize="0.5" />
+
+        <EditText
+            android:id="@+id/driver_comment_rating"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:hint="Give your Comment"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:progressTint="@color/colorAccent"
+            android:secondaryProgressTint="@android:color/transparent"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/submit_rating"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:background="#06BFC3"
+            android:text="Submit"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

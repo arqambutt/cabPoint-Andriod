@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#D3D3D3"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:background="#06BFC3"
+        android:id="@+id/hitory_head_1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/_12sdp">
+
+        <ImageView
+            android:background="@drawable/ripple_effect"
+            android:id="@+id/back_btn_history"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <com.apps.cabpoint.cabigate.views.MobiTextView
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:text="RIDE DETAILS"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_15ssp" />
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hitory_head_1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/history_Card_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="#ffffff">
+
+
+                <LinearLayout
+                    android:id="@+id/rel_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp"
+                    android:paddingTop="@dimen/_20sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_color_location_marker" />
+
+                    <com.apps.cabpoint.cabigate.views.MobiTextView
+                        android:id="@+id/current_location_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="Manchester Airport,Manchester,United Kindom"
+                        android:textColor="#06BFC3"
+                        android:textSize="@dimen/_12ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rel_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rel_1"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_20sdp"
+                    android:paddingRight="@dimen/_20sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_destination_flag" />
+
+                    <com.apps.cabpoint.cabigate.views.MobiTextView
+                        android:id="@+id/destination_location_history"
+                        android:layout_width="@dimen/_170sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:ellipsize="end"
+                        android:maxLines="3"
+                        android:text="Kanafa-Ya, Saint Giles High Street,\nLondon,United Kindom"
+                        android:textColor="#06BFC3"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <Button
+                        android:id="@+id/ride_again"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/cab_help_btn"
+                        android:gravity="center"
+                        android:text="Ride Again"
+                        android:textSize="@dimen/_8ssp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/dotted_line_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/rel_2"
+                    android:layerType="software"
+                    android:src="@drawable/cab_dotted_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dotted_line_1"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_10sdp">
+
+                    <com.apps.cabpoint.cabigate.views.MobiTextView
+                        android:id="@+id/txt_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="26-12-03 18:15:00"
+                        android:textColor="#06BFC3"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <com.apps.cabpoint.cabigate.views.MobiTextView
+                        android:id="@+id/txt_pound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:text="0.00"
+                        android:textColor="#06BFC3"
+                        android:textSize="@dimen/_15ssp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_toLeftOf="@id/txt_pound"
+                        android:src="@drawable/pound" />
+
+                    <com.apps.cabpoint.cabigate.views.MobiTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txt_date"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="PAID"
+                        android:textColor="#06BFC3"
+                        android:textSize="@dimen/_12ssp" />
+
+
+                    <com.apps.cabpoint.cabigate.views.MobiTextView
+                        android:id="@+id/payment_type_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/txt_date"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="CREDIT CARD"
+                        android:textColor="#06BFC3"
+                        android:textSize="@dimen/_12ssp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/hitory_head_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/history_Card_1"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="#06BFC3"
+                android:orientation="horizontal"
+                android:padding="@dimen/_12sdp">
+
+
+                <com.apps.cabpoint.cabigate.views.MobiTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="DRIVER DETAILS"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/history_Card_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hitory_head_2"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="#ffffff"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp">
+
+
+                <ImageView
+                    android:id="@+id/driver_img"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/cab_driver_bk"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/user_image" />
+
+                <com.apps.cabpoint.cabigate.views.MobiTextView
+                    android:id="@+id/txt_driver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@id/driver_img"
+                    android:text="AHMED ASLAM"
+                    android:textColor="#06BFC3"
+                    android:textSize="@dimen/_10ssp" />
+
+                <com.apps.cabpoint.cabigate.views.MobiTextView
+                    android:id="@+id/txt_nick_driver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_driver"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_toRightOf="@id/driver_img"
+                    android:text="MANI"
+                    android:textColor="#06BFC3"
+                    android:textSize="@dimen/_10ssp" />
+
+                <RatingBar
+                    android:id="@+id/RatingBar"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="3dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="3"
+                    android:scaleX=".8"
+                    android:scaleY=".8"
+                    android:stepSize="0.5" />
+
+                <ImageView
+                    android:id="@+id/dotted_card_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/driver_img"
+                    android:layerType="software"
+                    android:src="@drawable/cab_dotted_line" />
+
+                <com.apps.cabpoint.cabigate.views.MobiTextView
+                    android:id="@+id/driver_contact_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dotted_card_2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="(+44) 3334444444"
+                    android:textColor="#06BFC3"
+                    android:textSize="@dimen/_10ssp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/hitory_head_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/history_Card_2"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="#06BFC3"
+                android:orientation="horizontal"
+                android:padding="@dimen/_12sdp">
+
+
+                <com.apps.cabpoint.cabigate.views.MobiTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="CAR DETAILS"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hitory_head_3"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="#ffffff"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp">
+
+                <ImageView
+                    android:id="@+id/car_img"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/cab_driver_bk"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/user_image" />
+
+                <com.apps.cabpoint.cabigate.views.MobiTextView
+                    android:id="@+id/txt_car_model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@id/car_img"
+                    android:text="TOYOTA PRIUS"
+                    android:textColor="#06BFC3"
+                    android:textSize="@dimen/_10ssp" />
+
+                <com.apps.cabpoint.cabigate.views.MobiTextView
+                    android:id="@+id/txt_registration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_car_model"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_toRightOf="@id/car_img"
+                    android:text="LEX-1234"
+                    android:textColor="#06BFC3"
+                    android:textSize="@dimen/_10ssp" />
+
+                <com.apps.cabpoint.cabigate.views.MobiTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txt_car_model"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:text="0.000"
+                    android:textColor="#06BFC3"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/dotted_card_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/car_img"
+                    android:layerType="software"
+                    android:src="@drawable/cab_dotted_line" />
+
+                <com.apps.cabpoint.cabigate.views.MobiTextView
+                    android:id="@+id/txt_no_passengers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dotted_card_3"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="No.of Passengers:"
+                    android:textColor="#06BFC3"
+                    android:textSize="@dimen/_10ssp" />
+
+                <com.apps.cabpoint.cabigate.views.MobiTextView
+                    android:id="@+id/txt_total_no_passengers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dotted_card_3"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@id/txt_no_passengers"
+                    android:text="4"
+                    android:textColor="#06BFC3"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+                <com.apps.cabpoint.cabigate.views.MobiTextView
+                    android:id="@+id/txt_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_no_passengers"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Duration:"
+                    android:textColor="#06BFC3"
+                    android:textSize="@dimen/_10ssp" />
+
+                <com.apps.cabpoint.cabigate.views.MobiTextView
+                    android:id="@+id/txt_duration_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_no_passengers"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toRightOf="@id/txt_duration"
+                    android:text="03 hours 29 mins"
+                    android:textColor="#06BFC3"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+                <com.apps.cabpoint.cabigate.views.MobiTextView
+                    android:id="@+id/need_help_history"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/dotted_card_3"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/cab_help_btn"
+                    android:gravity="center"
+                    android:text="NEED HELP?"
+                    android:textSize="@dimen/_8ssp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

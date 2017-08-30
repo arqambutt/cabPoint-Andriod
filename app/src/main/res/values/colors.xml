@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorAccent">#1b999e</color>
+    <color name="grey">#424242</color>
+    <color name="black">#FF000000</color>
+    <color name="black_transparent">#efffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="fontColor">#6CE1E3</color>
+    <color name="fontColorDark">#20C2C8</color>
+    <color name="backgroundColorNew">#E6E6E6</color>
+    <color name="nav_band_color">#9036919A</color>
+    <color name="light_grey">#f7f7f7</color>
+    <color name="green">#3cb878</color>
+    <color name="red">#ed1c24</color>
+    <color name="new_font">#06BFC3</color>
+    <color name="light_blue">#4d15c4db</color>
+    <color name="change_color">#00CACD</color>
+    <color name="icon_color_grey">#9E9E9E</color>
+    <color name="cab_text">#06BFC3</color>
+    <color name="cab_text_dark">#00b0b4</color>
+    <color name="cab_button">#009a9e</color>
+    <color name="gray">#C0C0C0</color>
+    <color name="txt_color">#faf8f8</color>
+    <color name="layout_white_background">#66E6E6E6</color>
+    <color name="layout_white_background_dark">#e4e4e4</color>
+</resources>

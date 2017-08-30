@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/hitory_head_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cab_text"
+        android:orientation="horizontal"
+        android:padding="@dimen/_12sdp">
+
+        <ImageView
+            android:background="@drawable/ripple_effect"
+            android:id="@+id/back_btn_need_help_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <com.apps.cabpoint.cabigate.views.MobiTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/back"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_15ssp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.apps.cabpoint.cabigate.views.MobiTextView
+            android:id="@+id/help_description_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/message_view"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cab_text"
+            android:orientation="horizontal"
+            android:padding="@dimen/_12sdp">
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="Message"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_15ssp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/message_need_help_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_view"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint="Comment"
+            android:gravity="center"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="@dimen/_40sdp"/>
+        <Button
+            android:id="@+id/submit_btn_description"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:background="@color/cab_text"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

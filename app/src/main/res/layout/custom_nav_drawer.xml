@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_panel_nav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/nav_background"/>
+        <ImageView
+            android:background="@drawable/ripple_effect"
+            android:id="@+id/back_arrow_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:src="@drawable/ic_keyboard_arrow_left_white_36dp" />
+
+        <ImageView
+            android:id="@+id/profile_pic_nav"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_alignTop="@+id/back_arrow_nav"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/_4sdp"
+            android:background="@drawable/circle_outline"/>
+
+        <com.apps.cabpoint.cabigate.views.MobiTextView
+            android:id="@+id/user_name_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_pic_nav"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_17ssp" />
+
+        <com.apps.cabpoint.cabigate.views.MobiTextView
+            android:id="@+id/location_nav"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_below="@+id/user_name_nav"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/business_band_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_panel_nav"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:background="@color/nav_band_color">
+
+        <ImageView
+            android:id="@+id/nav_flash"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:src="@drawable/ic_flash_on_white_36dp" />
+
+        <com.apps.cabpoint.cabigate.views.MobiTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/nav_flash"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/nav_flash"
+            android:layout_toRightOf="@+id/nav_flash"
+            android:minWidth="@dimen/_140sdp"
+            android:text="@string/app_slogan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/business_band_nav"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/payment_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/black_ripple_effect">
+
+            <ImageView
+                android:id="@+id/payment_image_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:src="@drawable/ic_card_nav" />
+
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/payment_image_nav"
+                android:layout_toRightOf="@+id/payment_image_nav"
+                android:text="PAYMENT"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/history_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/black_ripple_effect">
+
+            <ImageView
+                android:id="@+id/history_image_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:src="@drawable/ic_history_nav" />
+
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/history_image_nav"
+                android:layout_toRightOf="@+id/history_image_nav"
+                android:text="HISTORY"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/free_ride_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/black_ripple_effect">
+
+            <ImageView
+                android:id="@+id/free_ride_image_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:src="@drawable/ic_free_nav" />
+
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/free_ride_image_nav"
+                android:layout_toRightOf="@+id/free_ride_image_nav"
+                android:text="FREE RIDES"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/promotions_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/black_ripple_effect">
+
+            <ImageView
+                android:id="@+id/promotions_image_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:src="@drawable/ic_promotion_nav" />
+
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_toEndOf="@+id/promotions_image_nav"
+                android:layout_toRightOf="@+id/promotions_image_nav"
+                android:text="PROMOTIONS"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/black_ripple_effect">
+
+            <ImageView
+                android:id="@+id/settings_image_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:src="@drawable/ic_setting_nav" />
+
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_toEndOf="@+id/settings_image_nav"
+                android:layout_toRightOf="@+id/settings_image_nav"
+                android:text="SETTINGS"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contact_us_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/black_ripple_effect">
+
+            <ImageView
+                android:id="@+id/contact_image_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:src="@drawable/ic_logout_nav" />
+
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_toEndOf="@+id/contact_image_nav"
+                android:layout_toRightOf="@+id/contact_image_nav"
+                android:text="@string/contact_us"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/sign_out_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/black_ripple_effect">
+
+            <ImageView
+                android:id="@+id/log_out_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:src="@drawable/ic_logout_new" />
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/log_out_icon"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:text="SIGN OUT"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.apps.cabpoint.cabigate.views.MobiTextView
+        android:id="@+id/terms_conditions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="@dimen/_1sdp"
+        android:text="Terms and conditions\n Version 1.0"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp" />
+</RelativeLayout>

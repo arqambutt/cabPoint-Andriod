@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/_55sdp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/car_image_fab"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_gravity="center"
+        android:padding="@dimen/_4sdp"
+        android:background="@drawable/shape_circle_light_grey"
+        android:elevation="@dimen/_2sdp"
+        />
+    <com.apps.cabpoint.cabigate.views.MobiTextView
+        android:id="@+id/car_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="Sedan"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10ssp"
+        />
+</LinearLayout>

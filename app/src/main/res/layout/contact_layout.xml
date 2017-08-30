@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#E6E6E6"
+    android:paddingBottom="@dimen/_20sdp"
+    android:layout_centerHorizontal="true">
+
+    <LinearLayout
+        android:id="@+id/rel_txt_contact"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="#06BFC3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CONTACT"
+            android:textSize="@dimen/_15ssp"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rel_txt_contact"
+        android:layout_width="@dimen/_190sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btn_call_driver"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="#ffffff"
+            android:text="CALL DRIVER"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="#06BFC3"/>
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="1dp"
+            android:background="#808080"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_below="@id/btn_call_driver"
+            android:layout_marginTop="@dimen/_20sdp"/>
+
+        <TextView
+            android:id="@+id/txt_or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:layout_toRightOf="@id/line_1"
+            android:layout_below="@id/btn_call_driver"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_10ssp"/>
+
+        <View
+            android:id="@+id/line_2"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="1dp"
+            android:background="#808080"
+            android:layout_toRightOf="@+id/txt_or"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_below="@id/btn_call_driver"
+            android:layout_marginTop="@dimen/_20sdp"/>
+
+        <Button
+            android:id="@+id/btn_msg_driver"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="#06BFC3"
+            android:text="MESSAGE"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="#ffffff"
+           android:layout_marginTop="@dimen/_20sdp"
+            android:layout_below="@+id/line_2"/>
+
+    </RelativeLayout>
+</RelativeLayout>

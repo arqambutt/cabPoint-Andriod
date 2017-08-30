@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#E6E6E6"
+        android:paddingBottom="@dimen/_20sdp">
+
+        <LinearLayout
+            android:id="@+id/rel_txt_contact"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@color/cab_text"
+            android:gravity="center">
+
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CONTACT US"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_txt_contact"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_25sdp">
+
+            <ImageView
+                android:id="@+id/img_contact"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_75sdp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/img_contact" />
+
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:id="@+id/txt_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_contact"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/txt_contact"
+                android:gravity="center"
+                android:textSize="@dimen/_10ssp" />
+
+            <Button
+                android:id="@+id/btn_yes"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignTop="@+id/btn_no"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@color/white"
+                android:text="CALL"
+                android:textColor="#06BFC3"
+                android:textSize="@dimen/_10ssp" />
+
+            <Button
+                android:id="@+id/btn_no"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/txt_contact"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toRightOf="@id/btn_yes"
+                android:background="@color/cab_text"
+                android:text="EMAIL"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

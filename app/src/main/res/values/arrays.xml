@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array_dot_active">
+        <item>@color/gray</item>
+        <item>@color/gray</item>
+        <item>@color/gray</item>
+        <item>@color/gray</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/txt_color</item>
+        <item>@color/txt_color</item>
+        <item>@color/txt_color</item>
+        <item>@color/txt_color</item>
+    </array>
+</resources>

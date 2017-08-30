@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cab_text"
+        android:orientation="horizontal"
+        android:padding="@dimen/_12sdp">
+
+        <ImageView
+            android:background="@drawable/ripple_effect"
+            android:id="@+id/back_free_ride"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <com.apps.cabpoint.cabigate.views.MobiTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Free Ride"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_15ssp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/front_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="0.1"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:padding="@dimen/_11sdp">
+
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Want free Rides?"
+                android:textColor="@color/cab_text"
+                android:textSize="@dimen/_22ssp" />
+
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="Share and Earn."
+                android:textColor="@color/cab_text"
+                android:textSize="@dimen/_18ssp" />
+
+            <ImageView
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/talk_bk"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/img_talk" />
+
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:id="@+id/screen_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:textColor="@color/cab_text"
+                android:textSize="@dimen/_12ssp" />
+
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:visibility="gone"
+                android:id="@+id/how_it_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="How It Works?"
+                android:textColor="@color/cab_text"
+                android:textSize="@dimen/_14ssp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cab_text_dark">
+
+                    <com.apps.cabpoint.cabigate.views.MobiTextView
+                        android:id="@+id/balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_7sdp"
+                        android:text="@string/balance"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <com.apps.cabpoint.cabigate.views.MobiTextView
+                        android:id="@+id/expire_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:padding="@dimen/_7sdp"
+                        android:text="@string/expiry_string"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_weight="0.9"
+            android:background="@color/cab_text"
+            android:orientation="vertical"
+
+            android:paddingLeft="@dimen/_30sdp"
+            android:paddingRight="@dimen/_30sdp">
+
+
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Your Invite Code"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold" />
+
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:id="@+id/promo_code_edit_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/edittext_promotion"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_15ssp" />
+
+            <com.apps.cabpoint.cabigate.views.MobiTextView
+                android:id="@+id/send_invitation_free_ride"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/send_invitation"
+
+                android:textColor="@color/cab_text"
+                android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/how_it_work_layout" />
+    </LinearLayout>
+
+</LinearLayout>
